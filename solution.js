@@ -1,10 +1,11 @@
 // complete the given function
 
 function palindrome(str){
-    const ltrArray = str.toLowerCase().split('');
+    const lowerStr = str.toLowerCase();
+    const ltrArray = lowerStr.split('');
     const rtlArray = ltrArray.reverse();
     const reverseStr = rtlArray.join('');
-    if(str != reverseStr) {
+    if(lowerStr != reverseStr) {
         return false
     }
   return true;
